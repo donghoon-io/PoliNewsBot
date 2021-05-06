@@ -1,0 +1,6 @@
+framework module Pods_NewsFeedBot {
+  umbrella header "Pods-NewsFeedBot-umbrella.h"
+
+  export *
+  module * { export * }
+}

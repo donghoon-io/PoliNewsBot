@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L7C-6L-NMV">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewsFeedBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NewsBot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDg-Fr-NsI">
+                                <rect key="frame" x="0.0" y="282" width="414" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HCI 이론 및 실습: 1조 Spring 2021 개발: 신동훈" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRm-9k-kig">
+                                <rect key="frame" x="123.5" y="412" width="167.5" height="72"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZg-f4-JxC">
+                                <rect key="frame" x="30" y="788" width="354" height="59"/>
+                                <color key="backgroundColor" white="0.87872923950000004" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zZg-f4-JxC" secondAttribute="height" multiplier="6" id="ECN-fE-Ny3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="뉴스 기사 추천 시나리오">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="moderateButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ow9-HZ-jc7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoT-GQ-Brh">
+                                <rect key="frame" x="30" y="714" width="354" height="59"/>
+                                <color key="backgroundColor" white="0.87872923950000004" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zoT-GQ-Brh" secondAttribute="height" multiplier="6" id="iRd-VP-Omb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="정치 성향 테스트 시나리오">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="testButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QUq-dY-5di"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zZg-f4-JxC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="7Wy-Ns-Ccw"/>
+                            <constraint firstItem="zZg-f4-JxC" firstAttribute="leading" secondItem="zoT-GQ-Brh" secondAttribute="leading" id="82I-1i-OmV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JDg-Fr-NsI" secondAttribute="trailing" id="8tf-Im-noI"/>
+                            <constraint firstItem="JRm-9k-kig" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EXk-xR-V2e"/>
+                            <constraint firstItem="JDg-Fr-NsI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H8f-Jy-mrs"/>
+                            <constraint firstItem="zZg-f4-JxC" firstAttribute="trailing" secondItem="zoT-GQ-Brh" secondAttribute="trailing" id="bPz-SS-ihQ"/>
+                            <constraint firstItem="JRm-9k-kig" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dAQ-7Q-tKd"/>
+                            <constraint firstItem="JDg-Fr-NsI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dxY-v3-DXA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zZg-f4-JxC" secondAttribute="bottom" constant="15" id="fFu-gO-sHD"/>
+                            <constraint firstItem="JRm-9k-kig" firstAttribute="top" secondItem="JDg-Fr-NsI" secondAttribute="bottom" constant="100" id="guL-Kf-lKg"/>
+                            <constraint firstItem="zZg-f4-JxC" firstAttribute="top" secondItem="zoT-GQ-Brh" secondAttribute="bottom" constant="15" id="i3D-uN-0M1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zZg-f4-JxC" secondAttribute="trailing" constant="30" id="sru-vr-aUu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ehK-yq-SFh"/>
+                    <connections>
+                        <outlet property="recommendationButton" destination="zZg-f4-JxC" id="jZ6-rb-CN6"/>
+                        <outlet property="testButton" destination="zoT-GQ-Brh" id="lM7-2w-BsU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="79.6875"/>
+        </scene>
+        <!--NewsBot-->
+        <scene sceneID="2rV-Rx-XzW">
+            <objects>
+                <viewController storyboardIdentifier="TestViewController" title="NewsBot" id="ltY-cV-jj4" customClass="TestViewController" customModule="NewsFeedBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gzs-Mk-4iy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qua-b3-mrx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="NewsBot" id="ynf-Ub-Cip"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pzt-2f-mTT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1819" y="80"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Q7M-I1-vo1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L7C-6L-NMV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ddk-vM-YhK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ogQ-co-bKm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FWQ-aZ-gx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+        </scene>
+        <!--NewsBot-->
+        <scene sceneID="MQ6-QG-Wlm">
+            <objects>
+                <viewController storyboardIdentifier="ModerateViewController" title="NewsBot" id="yJZ-4i-6PR" customClass="ModerateViewController" customModule="NewsFeedBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hfy-ep-AW4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="h5E-3L-B97"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="NewsFeedBot" id="jbS-f0-PZx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4L-FP-Dr0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1819" y="778"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
