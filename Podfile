@@ -9,4 +9,5 @@ target 'NewsFeedBot' do
   pod 'IQKeyboardManagerSwift'
   pod 'MessageKit', '~> 3.0.0'
   pod 'Firebase/Firestore'
+  pod 'TagListView', '~> 1.0'
 end
