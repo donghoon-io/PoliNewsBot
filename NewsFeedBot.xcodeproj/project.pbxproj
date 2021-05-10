@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		267EABDF2648473600EC1FE3 /* BottomPopupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABD72648473600EC1FE3 /* BottomPopupUtils.swift */; };
+		267EABE02648473600EC1FE3 /* BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABD82648473600EC1FE3 /* BottomPopupViewController.swift */; };
+		267EABE12648473600EC1FE3 /* BottomPopupDismissInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABD92648473600EC1FE3 /* BottomPopupDismissInteractionController.swift */; };
+		267EABE22648473600EC1FE3 /* BottomPopupNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABDA2648473600EC1FE3 /* BottomPopupNavigationController.swift */; };
+		267EABE32648473600EC1FE3 /* BottomPopupDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABDB2648473600EC1FE3 /* BottomPopupDismissAnimator.swift */; };
+		267EABE42648473600EC1FE3 /* BottomPopupPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABDC2648473600EC1FE3 /* BottomPopupPresentAnimator.swift */; };
+		267EABE52648473600EC1FE3 /* BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABDD2648473600EC1FE3 /* BottomPopupTransitionHandler.swift */; };
+		267EABE62648473600EC1FE3 /* BottomPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABDE2648473600EC1FE3 /* BottomPopupPresentationController.swift */; };
+		267EABE82648483600EC1FE3 /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABE72648483600EC1FE3 /* RateViewController.swift */; };
+		267EABEA26484A8500EC1FE3 /* SwiftlySlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABE926484A8500EC1FE3 /* SwiftlySlider.swift */; };
 		26D7ED7026443EB8003F3425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D7ED6F26443EB8003F3425 /* AppDelegate.swift */; };
 		26D7ED7226443EB8003F3425 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D7ED7126443EB8003F3425 /* SceneDelegate.swift */; };
 		26D7ED7426443EB8003F3425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D7ED7326443EB8003F3425 /* ViewController.swift */; };
@@ -21,6 +31,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		267EABD72648473600EC1FE3 /* BottomPopupUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupUtils.swift; sourceTree = "<group>"; };
+		267EABD82648473600EC1FE3 /* BottomPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
+		267EABD92648473600EC1FE3 /* BottomPopupDismissInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissInteractionController.swift; sourceTree = "<group>"; };
+		267EABDA2648473600EC1FE3 /* BottomPopupNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupNavigationController.swift; sourceTree = "<group>"; };
+		267EABDB2648473600EC1FE3 /* BottomPopupDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissAnimator.swift; sourceTree = "<group>"; };
+		267EABDC2648473600EC1FE3 /* BottomPopupPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentAnimator.swift; sourceTree = "<group>"; };
+		267EABDD2648473600EC1FE3 /* BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
+		267EABDE2648473600EC1FE3 /* BottomPopupPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentationController.swift; sourceTree = "<group>"; };
+		267EABE72648483600EC1FE3 /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
+		267EABE926484A8500EC1FE3 /* SwiftlySlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftlySlider.swift; sourceTree = "<group>"; };
 		26D7ED6C26443EB8003F3425 /* NewsFeedBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsFeedBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D7ED6F26443EB8003F3425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26D7ED7126443EB8003F3425 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +78,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		267EABD62648473600EC1FE3 /* BottomPopupController */ = {
+			isa = PBXGroup;
+			children = (
+				267EABD72648473600EC1FE3 /* BottomPopupUtils.swift */,
+				267EABD82648473600EC1FE3 /* BottomPopupViewController.swift */,
+				267EABD92648473600EC1FE3 /* BottomPopupDismissInteractionController.swift */,
+				267EABDA2648473600EC1FE3 /* BottomPopupNavigationController.swift */,
+				267EABDB2648473600EC1FE3 /* BottomPopupDismissAnimator.swift */,
+				267EABDC2648473600EC1FE3 /* BottomPopupPresentAnimator.swift */,
+				267EABDD2648473600EC1FE3 /* BottomPopupTransitionHandler.swift */,
+				267EABDE2648473600EC1FE3 /* BottomPopupPresentationController.swift */,
+			);
+			path = BottomPopupController;
+			sourceTree = "<group>";
+		};
 		26D7ED6326443EB8003F3425 = {
 			isa = PBXGroup;
 			children = (
@@ -83,9 +118,12 @@
 				26D7ED7126443EB8003F3425 /* SceneDelegate.swift */,
 				26D7ED7326443EB8003F3425 /* ViewController.swift */,
 				26D7ED8326444064003F3425 /* ModerateViewController.swift */,
+				267EABD62648473600EC1FE3 /* BottomPopupController */,
 				26D7ED8826444202003F3425 /* Chat.swift */,
 				26D7ED8726444202003F3425 /* Message.swift */,
 				26D7ED852644406B003F3425 /* TestViewController.swift */,
+				267EABE72648483600EC1FE3 /* RateViewController.swift */,
+				267EABE926484A8500EC1FE3 /* SwiftlySlider.swift */,
 				26D7ED7526443EB8003F3425 /* Main.storyboard */,
 				26D7ED7826443EB8003F3425 /* Assets.xcassets */,
 				26D7ED7A26443EB8003F3425 /* LaunchScreen.storyboard */,
@@ -218,11 +256,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				26D7ED862644406B003F3425 /* TestViewController.swift in Sources */,
+				267EABE52648473600EC1FE3 /* BottomPopupTransitionHandler.swift in Sources */,
 				26D7ED7426443EB8003F3425 /* ViewController.swift in Sources */,
 				26D7ED8A26444202003F3425 /* Chat.swift in Sources */,
+				267EABDF2648473600EC1FE3 /* BottomPopupUtils.swift in Sources */,
+				267EABEA26484A8500EC1FE3 /* SwiftlySlider.swift in Sources */,
+				267EABE22648473600EC1FE3 /* BottomPopupNavigationController.swift in Sources */,
 				26D7ED7026443EB8003F3425 /* AppDelegate.swift in Sources */,
+				267EABE02648473600EC1FE3 /* BottomPopupViewController.swift in Sources */,
 				26D7ED8926444202003F3425 /* Message.swift in Sources */,
+				267EABE12648473600EC1FE3 /* BottomPopupDismissInteractionController.swift in Sources */,
 				26D7ED7226443EB8003F3425 /* SceneDelegate.swift in Sources */,
+				267EABE62648473600EC1FE3 /* BottomPopupPresentationController.swift in Sources */,
+				267EABE32648473600EC1FE3 /* BottomPopupDismissAnimator.swift in Sources */,
+				267EABE42648473600EC1FE3 /* BottomPopupPresentAnimator.swift in Sources */,
+				267EABE82648483600EC1FE3 /* RateViewController.swift in Sources */,
 				26D7ED8426444064003F3425 /* ModerateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

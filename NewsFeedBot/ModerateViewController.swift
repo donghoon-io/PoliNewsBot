@@ -95,11 +95,20 @@ class ModerateViewController: MessagesViewController, InputBarAccessoryViewDeleg
         
         bot()
         
+        let layout = messagesCollectionView.collectionViewLayout as? MessagesCollectionViewFlowLayout
+        layout?.setMessageIncomingAccessoryViewSize(CGSize(width: 30, height: 30))
+        layout?.setMessageIncomingAccessoryViewPadding(HorizontalEdgeInsets(left: 8, right: 0))
+        layout?.setMessageIncomingAccessoryViewPosition(.messageBottom)
+        layout?.setMessageOutgoingAccessoryViewSize(CGSize(width: 30, height: 30))
+        layout?.setMessageOutgoingAccessoryViewPadding(HorizontalEdgeInsets(left: 0, right: 8))
+        
         self.view.bringSubviewToFront(tagTopView)
     }
     
-    func sendBotMessage(text: String) {
-        let message = Message(id: UUID().uuidString, content: text, created: Timestamp(), senderID: botID, senderName: "봇")
+    
+    
+    func sendBotMessage(text: String, _ isTrue: Bool = false) {
+        let message = Message(id: isTrue ? "thisistrue"+UUID().uuidString:UUID().uuidString, content: text, created: Timestamp(), senderID: botID, senderName: "봇")
         
         insertNewMessage(message)
         
@@ -107,20 +116,21 @@ class ModerateViewController: MessagesViewController, InputBarAccessoryViewDeleg
         messagesCollectionView.scrollToBottom(animated: true)
     }
     
+    
     func bot() {
         DispatchQueue.main.asyncAfter(deadline: .now()+2.0) {
             self.sendBotMessage(text: "[더불어민주당]에 대한 기사입니다")
             DispatchQueue.main.asyncAfter(deadline: .now()+2.0) {
-                self.sendBotMessage(text: "김남국 더불어민주당 의원이 '알고리즘이 공정하고 중립적이며 객관적인지에 대한 문제들이 지속적으로 제기되고 있다'며 규제 필요성을 재차 주장했다. 최근 김의원의 발의안에 따르면, 문화체육관광부 소속 뉴스포털이용자위원회를 설치하고, 포털의 기사배열 알고리즘을 공개 및 검증하게 된다.")
+                self.sendBotMessage(text: "김남국 더불어민주당 의원이 '알고리즘이 공정하고 중립적이며 객관적인지에 대한 문제들이 지속적으로 제기되고 있다'며 규제 필요성을 재차 주장했다. 최근 김의원의 발의안에 따르면, 문화체육관광부 소속 뉴스포털이용자위원회를 설치하고, 포털의 기사배열 알고리즘을 공개 및 검증하게 된다.", true)
                 DispatchQueue.main.asyncAfter(deadline: .now()+2.0) {
-                    self.sendBotMessage(text: "박용진 더불어민주당 의원이 9일 '정치의 세대교체로 대한민국의 시대교체를 이루겠다'며 20대 대선 출마를 공식 선언했다. '낡고 무기력한 정치로 청년 세대를 분노하게 만든 책임이 있는 인물·세력은 새 시대를 이끌 수 없다'라고도 밝혔다.")
+                    self.sendBotMessage(text: "박용진 더불어민주당 의원이 9일 '정치의 세대교체로 대한민국의 시대교체를 이루겠다'며 20대 대선 출마를 공식 선언했다. '낡고 무기력한 정치로 청년 세대를 분노하게 만든 책임이 있는 인물·세력은 새 시대를 이끌 수 없다'라고도 밝혔다.", true)
                     DispatchQueue.main.asyncAfter(deadline: .now()+2.0) {
                         self.sendBotMessage(text: "[택배기사 파업]에 대한 기사입니다")
                         DispatchQueue.main.asyncAfter(deadline: .now()+2.0) {
-                            self.sendBotMessage(text: "지난달 서울 강동구 아파트에서 택배차량의 지상 진입을 금지하면서 해당아파트, 택배사와 갈등을 빚고 있는 전국택배노동조합이 총파업을 결정했다. 택배노조 파업은 서울 강동구 고덕동의 한 대단지 아파트에서 벌어진 '택배갈등'에서 시작됐다.")
+                            self.sendBotMessage(text: "지난달 서울 강동구 아파트에서 택배차량의 지상 진입을 금지하면서 해당아파트, 택배사와 갈등을 빚고 있는 전국택배노동조합이 총파업을 결정했다. 택배노조 파업은 서울 강동구 고덕동의 한 대단지 아파트에서 벌어진 '택배갈등'에서 시작됐다.", true)
                             
                             DispatchQueue.main.asyncAfter(deadline: .now()+2.0) {
-                                self.sendBotMessage(text: "정부가 부분파업을 예고한 전국택배노동조합에 '택배사가 참여하는 사회적 논의기구를 만들자'고 제안한 것으로 9일 알려졌다. 택배차량의 지상도로 진입 차단 문제로 공원형 아파트에서 입주자들과 택배기사들 간의 갈등이 반복되는 상황에서 이 문제 해결을 위해 별도의 '사회적 논의기구' 설치를 언급한 것은 처음이다.")
+                                self.sendBotMessage(text: "정부가 부분파업을 예고한 전국택배노동조합에 '택배사가 참여하는 사회적 논의기구를 만들자'고 제안한 것으로 9일 알려졌다. 택배차량의 지상도로 진입 차단 문제로 공원형 아파트에서 입주자들과 택배기사들 간의 갈등이 반복되는 상황에서 이 문제 해결을 위해 별도의 '사회적 논의기구' 설치를 언급한 것은 처음이다.", true)
                             }
                         }
                     }
@@ -207,6 +217,30 @@ class ModerateViewController: MessagesViewController, InputBarAccessoryViewDeleg
         case experimentID: return .white
         default: return UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
         }
+    }
+    func configureAccessoryView(_ accessoryView: UIView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
+        // Cells are reused, so only add a button here once. For real use you would need to
+        // ensure any subviews are removed if not needed
+        
+        
+        accessoryView.subviews.forEach { $0.removeFromSuperview() }
+        accessoryView.backgroundColor = .clear
+        
+        if message.messageId.contains("thisistrue") {
+            let button = UIButton(type: .infoLight)
+            button.tintColor = .link
+            accessoryView.addSubview(button)
+            button.frame = accessoryView.bounds
+            button.addTarget(self, action: #selector(click), for: .touchUpInside)
+            accessoryView.layer.cornerRadius = accessoryView.frame.height / 2
+            accessoryView.backgroundColor = .clear
+        }
+        
+    }
+    
+    @objc func click() {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RateViewController") as! RateViewController
+        self.present(vc, animated: true, completion: nil)
     }
     
     func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
