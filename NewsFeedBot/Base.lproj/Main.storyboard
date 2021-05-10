@@ -17,14 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NewsBot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDg-Fr-NsI">
-                                <rect key="frame" x="0.0" y="282" width="414" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDg-Fr-NsI">
+                                <rect key="frame" x="0.0" y="294" width="414" height="30"/>
+                                <string key="text">PoliNewsBot
+</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HCI 이론 및 실습: 1조 Spring 2021 개발: 신동훈" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRm-9k-kig">
-                                <rect key="frame" x="123.5" y="412" width="167.5" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HCI 이론 및 실습: 1조 Spring 2021" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRm-9k-kig">
+                                <rect key="frame" x="123.5" y="424" width="167.5" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,7 +38,7 @@
                                     <constraint firstAttribute="width" secondItem="zZg-f4-JxC" secondAttribute="height" multiplier="6" id="ECN-fE-Ny3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="뉴스 기사 추천 시나리오">
+                                <state key="normal" title="2. 뉴스 기사 추천 시나리오">
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -50,7 +52,7 @@
                                     <constraint firstAttribute="width" secondItem="zoT-GQ-Brh" secondAttribute="height" multiplier="6" id="iRd-VP-Omb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="회원가입 / 개인화 시나리오">
+                                <state key="normal" title="1. 회원가입 / 개인화 시나리오">
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -95,7 +97,7 @@
                         <viewLayoutGuide key="safeArea" id="qua-b3-mrx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="NewsBot" id="ynf-Ub-Cip"/>
+                    <navigationItem key="navigationItem" title="PoliNewsBot" id="ynf-Ub-Cip"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzt-2f-mTT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -199,7 +201,7 @@
                             <constraint firstItem="h5E-3L-B97" firstAttribute="trailing" secondItem="Pfv-3F-IRJ" secondAttribute="trailing" id="xPw-kP-mse"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="NewsBot" id="jbS-f0-PZx"/>
+                    <navigationItem key="navigationItem" title="PoliNewsBot" id="jbS-f0-PZx"/>
                     <connections>
                         <outlet property="tagListView" destination="AvN-wb-ahN" id="GBt-CW-pCX"/>
                         <outlet property="tagTopView" destination="Pfv-3F-IRJ" id="w9p-hY-Qeb"/>
@@ -224,27 +226,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSS-F7-2Bo">
-                                <rect key="frame" x="30" y="139.5" width="354" height="347"/>
+                                <rect key="frame" x="30" y="139.5" width="354" height="306"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="데일리안 정계성 기자">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="  ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="18" name="AppleSDGothicNeo-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
                                     <fragment>
-                                        <mutableString key="content">김남국 더불어민주당 의원이 "알고리즘이 공정하고 중립적이며 객관적인지에 대한 문제들이 지속적으로 제기되고 있다"며 규제 필요성을 재차 주장했다. 자신이 발의한 '포털뉴스 알고리즘 규제법' 개정안을 비판한 안철수 국민의당 대표를 향해서는 "공부 좀 하셨으면 좋겠다"고 비난했다.
+                                        <string key="content">김남국 더불어민주당 의원이 "알고리즘이 공정하고 중립적이며 객관적인지에 대한 문제들이 지속적으로 제기되고 있다"며 규제 필요성을 재차 주장했다. 자신이 발의한 '포털뉴스 알고리즘 규제법' 개정안을 비판한 안철수 국민의당 대표를 향해서는 "공부 좀 하셨으면 좋겠다"고 비난했다.
 
 김 의원은 9일 오후 자신의 페이스북을 통해 "알고리즘 자체가 사람에 의해서 만들어지기 때문에 알고리즘을 짜는 사람의 편향성과 왜곡된 의도에 따라서 얼마든지 선입견이 반영할 수 있고, 알고리즘이 기반한 빅데이터가 어떤 것이냐, 이용하는 사람의 편견 등에 의해서도 여러 가지 차별적, 불공정한 결과가 나올 수 있다"며 이같이 말했다.
-</mutableString>
+</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="AppleSDGothicNeo-Regular"/>
@@ -255,7 +243,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUq-me-mWE" customClass="SwiftlySlider" customModule="NewsFeedBot" customModuleProvider="target">
-                                <rect key="frame" x="30" y="554.5" width="354" height="30"/>
+                                <rect key="frame" x="30" y="513.5" width="354" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="lv3-XK-HkI"/>
@@ -275,9 +263,18 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이 기사가 얼마나 마음에 드시나요? (%)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjI-2P-5T2">
-                                <rect key="frame" x="30" y="516.5" width="354" height="23"/>
+                                <rect key="frame" x="30" y="475.5" width="354" height="23"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="데일리안의 황규석 기자가 작성한 글입니다" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egh-St-w3v">
+                                <rect key="frame" x="30" y="558.5" width="354" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="1sA-63-oeO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -286,6 +283,7 @@
                         <constraints>
                             <constraint firstItem="BsD-Ef-Wdr" firstAttribute="trailing" secondItem="bjI-2P-5T2" secondAttribute="trailing" constant="30" id="2nN-Tj-ZEw"/>
                             <constraint firstItem="aUq-me-mWE" firstAttribute="top" secondItem="bjI-2P-5T2" secondAttribute="bottom" constant="15" id="3RJ-SP-u65"/>
+                            <constraint firstItem="egh-St-w3v" firstAttribute="top" secondItem="aUq-me-mWE" secondAttribute="bottom" constant="15" id="3oJ-om-T9x"/>
                             <constraint firstItem="hvl-mf-uu2" firstAttribute="centerY" secondItem="TU0-IZ-cey" secondAttribute="centerY" id="5Zu-kQ-FkH"/>
                             <constraint firstItem="hvl-mf-uu2" firstAttribute="leading" secondItem="TU0-IZ-cey" secondAttribute="trailing" constant="10" id="8zv-8E-4v5"/>
                             <constraint firstItem="bjI-2P-5T2" firstAttribute="leading" secondItem="BsD-Ef-Wdr" secondAttribute="leading" constant="30" id="D0a-iW-jrq"/>
@@ -295,12 +293,15 @@
                             <constraint firstItem="BsD-Ef-Wdr" firstAttribute="trailing" secondItem="KSS-F7-2Bo" secondAttribute="trailing" constant="30" id="UY1-ED-X0T"/>
                             <constraint firstItem="KSS-F7-2Bo" firstAttribute="top" secondItem="TU0-IZ-cey" secondAttribute="bottom" constant="20" id="cWG-Bg-UZ8"/>
                             <constraint firstItem="KSS-F7-2Bo" firstAttribute="leading" secondItem="BsD-Ef-Wdr" secondAttribute="leading" constant="30" id="dj0-Df-qOk"/>
+                            <constraint firstItem="egh-St-w3v" firstAttribute="leading" secondItem="aUq-me-mWE" secondAttribute="leading" id="hyY-HY-T3C"/>
                             <constraint firstItem="bjI-2P-5T2" firstAttribute="top" secondItem="KSS-F7-2Bo" secondAttribute="bottom" constant="30" id="kqa-Db-gqA"/>
+                            <constraint firstItem="egh-St-w3v" firstAttribute="trailing" secondItem="aUq-me-mWE" secondAttribute="trailing" id="qSH-8n-yfj"/>
                             <constraint firstItem="BsD-Ef-Wdr" firstAttribute="trailing" secondItem="aUq-me-mWE" secondAttribute="trailing" constant="30" id="u8o-J9-ZEE"/>
                             <constraint firstItem="TU0-IZ-cey" firstAttribute="top" secondItem="BsD-Ef-Wdr" secondAttribute="top" constant="30" id="zui-3Z-gVD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="authorLabel" destination="egh-St-w3v" id="8tz-fu-ClD"/>
                         <outlet property="rateView" destination="aUq-me-mWE" id="rVy-kJ-g1y"/>
                     </connections>
                 </viewController>

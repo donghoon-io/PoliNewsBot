@@ -7,7 +7,17 @@
 
 import UIKit
 
-class RateViewController: BottomPopupViewController {
+class RateViewController: BottomPopupViewController, SwiftlySliderDelegate {
+    
+    func swiftlySliderValueChanged(_ value: Int) {
+        self.authorLabel.isHidden = false
+    }
+    
+    @IBOutlet weak var authorLabel: UILabel! {
+        didSet {
+            authorLabel.isHidden = true
+        }
+    }
     @IBAction func cancelClicked(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -28,6 +38,8 @@ class RateViewController: BottomPopupViewController {
         rateView.currentValue = 50
         rateView.maxValue = 100
         rateView.minValue = 0
+        
+        rateView.delegate = self
     }
     
 
