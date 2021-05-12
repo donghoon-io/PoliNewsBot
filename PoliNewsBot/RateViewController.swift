@@ -1,6 +1,6 @@
 //
 //  RateViewController.swift
-//  NewsFeedBot
+//  PoliNewsBot
 //
 //  Created by Donghoon Shin on 2021/05/10.
 //

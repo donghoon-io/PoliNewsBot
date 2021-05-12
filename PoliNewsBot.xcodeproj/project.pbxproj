@@ -27,7 +27,7 @@
 		26D7ED862644406B003F3425 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D7ED852644406B003F3425 /* TestViewController.swift */; };
 		26D7ED8926444202003F3425 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D7ED8726444202003F3425 /* Message.swift */; };
 		26D7ED8A26444202003F3425 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D7ED8826444202003F3425 /* Chat.swift */; };
-		AA8116B0DD689088C60524B6 /* Pods_NewsFeedBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F859A4DD3303508E6862FCD /* Pods_NewsFeedBot.framework */; };
+		388DD69D3045A40B6D35C782 /* Pods_PoliNewsBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6BEE36F6EB278929809348 /* Pods_PoliNewsBot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		267EABDE2648473600EC1FE3 /* BottomPopupPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentationController.swift; sourceTree = "<group>"; };
 		267EABE72648483600EC1FE3 /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
 		267EABE926484A8500EC1FE3 /* SwiftlySlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftlySlider.swift; sourceTree = "<group>"; };
-		26D7ED6C26443EB8003F3425 /* NewsFeedBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsFeedBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D7ED6C26443EB8003F3425 /* PoliNewsBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoliNewsBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D7ED6F26443EB8003F3425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26D7ED7126443EB8003F3425 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		26D7ED7326443EB8003F3425 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,9 +53,9 @@
 		26D7ED852644406B003F3425 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		26D7ED8726444202003F3425 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		26D7ED8826444202003F3425 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
-		2F859A4DD3303508E6862FCD /* Pods_NewsFeedBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsFeedBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		827C8D4C7B832BC6C762D507 /* Pods-NewsFeedBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFeedBot.release.xcconfig"; path = "Target Support Files/Pods-NewsFeedBot/Pods-NewsFeedBot.release.xcconfig"; sourceTree = "<group>"; };
-		B204080E5C38D7B76567A532 /* Pods-NewsFeedBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFeedBot.debug.xcconfig"; path = "Target Support Files/Pods-NewsFeedBot/Pods-NewsFeedBot.debug.xcconfig"; sourceTree = "<group>"; };
+		48BF6BADAEFDFABA7809449D /* Pods-PoliNewsBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoliNewsBot.release.xcconfig"; path = "Target Support Files/Pods-PoliNewsBot/Pods-PoliNewsBot.release.xcconfig"; sourceTree = "<group>"; };
+		5B6BEE36F6EB278929809348 /* Pods_PoliNewsBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoliNewsBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA3C68579A17CE62B3E37FB1 /* Pods-PoliNewsBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoliNewsBot.debug.xcconfig"; path = "Target Support Files/Pods-PoliNewsBot/Pods-PoliNewsBot.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,21 +63,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA8116B0DD689088C60524B6 /* Pods_NewsFeedBot.framework in Frameworks */,
+				388DD69D3045A40B6D35C782 /* Pods_PoliNewsBot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		166DF9B3C179B8B49B45A765 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2F859A4DD3303508E6862FCD /* Pods_NewsFeedBot.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		267EABD62648473600EC1FE3 /* BottomPopupController */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,22 +88,22 @@
 		26D7ED6326443EB8003F3425 = {
 			isa = PBXGroup;
 			children = (
-				26D7ED6E26443EB8003F3425 /* NewsFeedBot */,
+				26D7ED6E26443EB8003F3425 /* PoliNewsBot */,
 				26D7ED6D26443EB8003F3425 /* Products */,
 				6262A12460EE98A0AB0CDC11 /* Pods */,
-				166DF9B3C179B8B49B45A765 /* Frameworks */,
+				F83AE750DFFE09008D643CD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		26D7ED6D26443EB8003F3425 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				26D7ED6C26443EB8003F3425 /* NewsFeedBot.app */,
+				26D7ED6C26443EB8003F3425 /* PoliNewsBot.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		26D7ED6E26443EB8003F3425 /* NewsFeedBot */ = {
+		26D7ED6E26443EB8003F3425 /* PoliNewsBot */ = {
 			isa = PBXGroup;
 			children = (
 				26D7ED6F26443EB8003F3425 /* AppDelegate.swift */,
@@ -129,38 +121,46 @@
 				26D7ED7A26443EB8003F3425 /* LaunchScreen.storyboard */,
 				26D7ED7D26443EB8003F3425 /* Info.plist */,
 			);
-			path = NewsFeedBot;
+			path = PoliNewsBot;
 			sourceTree = "<group>";
 		};
 		6262A12460EE98A0AB0CDC11 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B204080E5C38D7B76567A532 /* Pods-NewsFeedBot.debug.xcconfig */,
-				827C8D4C7B832BC6C762D507 /* Pods-NewsFeedBot.release.xcconfig */,
+				DA3C68579A17CE62B3E37FB1 /* Pods-PoliNewsBot.debug.xcconfig */,
+				48BF6BADAEFDFABA7809449D /* Pods-PoliNewsBot.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F83AE750DFFE09008D643CD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B6BEE36F6EB278929809348 /* Pods_PoliNewsBot.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		26D7ED6B26443EB8003F3425 /* NewsFeedBot */ = {
+		26D7ED6B26443EB8003F3425 /* PoliNewsBot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26D7ED8026443EB8003F3425 /* Build configuration list for PBXNativeTarget "NewsFeedBot" */;
+			buildConfigurationList = 26D7ED8026443EB8003F3425 /* Build configuration list for PBXNativeTarget "PoliNewsBot" */;
 			buildPhases = (
-				CF0B90666E5F03FA4261C417 /* [CP] Check Pods Manifest.lock */,
+				CE900DAAE7ABD6A1C9E3DB41 /* [CP] Check Pods Manifest.lock */,
 				26D7ED6826443EB8003F3425 /* Sources */,
 				26D7ED6926443EB8003F3425 /* Frameworks */,
 				26D7ED6A26443EB8003F3425 /* Resources */,
-				00C437561EC087149075217A /* [CP] Embed Pods Frameworks */,
+				8A317A62EC65267D7E7F5FFC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NewsFeedBot;
+			name = PoliNewsBot;
 			productName = NewsFeedBot;
-			productReference = 26D7ED6C26443EB8003F3425 /* NewsFeedBot.app */;
+			productReference = 26D7ED6C26443EB8003F3425 /* PoliNewsBot.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +177,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 26D7ED6726443EB8003F3425 /* Build configuration list for PBXProject "NewsFeedBot" */;
+			buildConfigurationList = 26D7ED6726443EB8003F3425 /* Build configuration list for PBXProject "PoliNewsBot" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -190,7 +190,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				26D7ED6B26443EB8003F3425 /* NewsFeedBot */,
+				26D7ED6B26443EB8003F3425 /* PoliNewsBot */,
 			);
 		};
 /* End PBXProject section */
@@ -209,24 +209,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00C437561EC087149075217A /* [CP] Embed Pods Frameworks */ = {
+		8A317A62EC65267D7E7F5FFC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NewsFeedBot/Pods-NewsFeedBot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PoliNewsBot/Pods-PoliNewsBot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NewsFeedBot/Pods-NewsFeedBot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PoliNewsBot/Pods-PoliNewsBot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewsFeedBot/Pods-NewsFeedBot-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PoliNewsBot/Pods-PoliNewsBot-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CF0B90666E5F03FA4261C417 /* [CP] Check Pods Manifest.lock */ = {
+		CE900DAAE7ABD6A1C9E3DB41 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -241,7 +241,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NewsFeedBot-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PoliNewsBot-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -415,18 +415,18 @@
 		};
 		26D7ED8126443EB8003F3425 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B204080E5C38D7B76567A532 /* Pods-NewsFeedBot.debug.xcconfig */;
+			baseConfigurationReference = DA3C68579A17CE62B3E37FB1 /* Pods-PoliNewsBot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJG8NYLG53;
-				INFOPLIST_FILE = NewsFeedBot/Info.plist;
+				INFOPLIST_FILE = PoliNewsBot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = snu.isc.NewsFeedBot;
+				PRODUCT_BUNDLE_IDENTIFIER = snu.isc.PoliNewsBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -435,18 +435,18 @@
 		};
 		26D7ED8226443EB8003F3425 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 827C8D4C7B832BC6C762D507 /* Pods-NewsFeedBot.release.xcconfig */;
+			baseConfigurationReference = 48BF6BADAEFDFABA7809449D /* Pods-PoliNewsBot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJG8NYLG53;
-				INFOPLIST_FILE = NewsFeedBot/Info.plist;
+				INFOPLIST_FILE = PoliNewsBot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = snu.isc.NewsFeedBot;
+				PRODUCT_BUNDLE_IDENTIFIER = snu.isc.PoliNewsBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,7 +456,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26D7ED6726443EB8003F3425 /* Build configuration list for PBXProject "NewsFeedBot" */ = {
+		26D7ED6726443EB8003F3425 /* Build configuration list for PBXProject "PoliNewsBot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26D7ED7E26443EB8003F3425 /* Debug */,
@@ -465,7 +465,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26D7ED8026443EB8003F3425 /* Build configuration list for PBXNativeTarget "NewsFeedBot" */ = {
+		26D7ED8026443EB8003F3425 /* Build configuration list for PBXNativeTarget "PoliNewsBot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26D7ED8126443EB8003F3425 /* Debug */,

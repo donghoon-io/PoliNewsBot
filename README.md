@@ -1,5 +1,7 @@
 ## PoliNewsBot
 
+![Logo](https://donghoon.io/assets/images/misc/polinewsbot.png)
+
 PoliNewsBot is an iOS-based chatbot for the Spring 2021 HCI Theory and Practice team project.
 
 ### Installation
