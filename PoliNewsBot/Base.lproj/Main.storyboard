@@ -228,7 +228,7 @@
             </objects>
             <point key="canvasLocation" x="1819" y="778"/>
         </scene>
-        <!--Intervention View Controller-->
+        <!--PoliNewsBot-->
         <scene sceneID="Z98-vw-YlU">
             <objects>
                 <viewController storyboardIdentifier="InterventionViewController" id="eA5-u4-tFC" customClass="InterventionViewController" customModule="PoliNewsBot" customModuleProvider="target" sceneMemberID="viewController">
@@ -238,6 +238,7 @@
                         <viewLayoutGuide key="safeArea" id="r7H-5z-j0Z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="PoliNewsBot" id="zCi-da-BaZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ebk-h3-bpq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
