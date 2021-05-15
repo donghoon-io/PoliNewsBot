@@ -26,6 +26,10 @@ class ViewController: UIViewController {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ModerateViewController") as! ModerateViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    @IBAction func interventionButtonClicked(_ sender: UIButton) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InterventionViewController") as! InterventionViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

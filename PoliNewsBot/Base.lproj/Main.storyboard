@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewsFeedBot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PoliNewsBot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZg-f4-JxC">
-                                <rect key="frame" x="30" y="788" width="354" height="59"/>
+                                <rect key="frame" x="30" y="724" width="354" height="59"/>
                                 <color key="backgroundColor" white="0.87872923950000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zZg-f4-JxC" secondAttribute="height" multiplier="6" id="ECN-fE-Ny3"/>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoT-GQ-Brh">
-                                <rect key="frame" x="30" y="714" width="354" height="59"/>
+                                <rect key="frame" x="30" y="650" width="354" height="59"/>
                                 <color key="backgroundColor" white="0.87872923950000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zoT-GQ-Brh" secondAttribute="height" multiplier="6" id="iRd-VP-Omb"/>
@@ -59,6 +59,20 @@
                                     <action selector="testButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QUq-dY-5di"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puH-rK-p2F">
+                                <rect key="frame" x="30" y="798" width="354" height="59"/>
+                                <color key="backgroundColor" white="0.87872923950000004" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="puH-rK-p2F" secondAttribute="height" multiplier="6" id="txc-lP-gLy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="3. 챗봇 중재 시나리오">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="interventionButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPc-ZJ-ByE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -67,11 +81,14 @@
                             <constraint firstItem="zZg-f4-JxC" firstAttribute="leading" secondItem="zoT-GQ-Brh" secondAttribute="leading" id="82I-1i-OmV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JDg-Fr-NsI" secondAttribute="trailing" id="8tf-Im-noI"/>
                             <constraint firstItem="JRm-9k-kig" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EXk-xR-V2e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="puH-rK-p2F" secondAttribute="bottom" constant="5" id="GKF-FD-IEz"/>
                             <constraint firstItem="JDg-Fr-NsI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H8f-Jy-mrs"/>
+                            <constraint firstItem="puH-rK-p2F" firstAttribute="trailing" secondItem="zoT-GQ-Brh" secondAttribute="trailing" id="Imm-x3-6yU"/>
+                            <constraint firstItem="puH-rK-p2F" firstAttribute="leading" secondItem="zoT-GQ-Brh" secondAttribute="leading" id="SZl-KK-LRs"/>
+                            <constraint firstItem="puH-rK-p2F" firstAttribute="top" secondItem="zZg-f4-JxC" secondAttribute="bottom" constant="15" id="Vz9-A3-a8F"/>
                             <constraint firstItem="zZg-f4-JxC" firstAttribute="trailing" secondItem="zoT-GQ-Brh" secondAttribute="trailing" id="bPz-SS-ihQ"/>
                             <constraint firstItem="JRm-9k-kig" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dAQ-7Q-tKd"/>
                             <constraint firstItem="JDg-Fr-NsI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dxY-v3-DXA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zZg-f4-JxC" secondAttribute="bottom" constant="15" id="fFu-gO-sHD"/>
                             <constraint firstItem="JRm-9k-kig" firstAttribute="top" secondItem="JDg-Fr-NsI" secondAttribute="bottom" constant="100" id="guL-Kf-lKg"/>
                             <constraint firstItem="zZg-f4-JxC" firstAttribute="top" secondItem="zoT-GQ-Brh" secondAttribute="bottom" constant="15" id="i3D-uN-0M1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zZg-f4-JxC" secondAttribute="trailing" constant="30" id="sru-vr-aUu"/>
@@ -90,7 +107,7 @@
         <!--NewsBot-->
         <scene sceneID="2rV-Rx-XzW">
             <objects>
-                <viewController storyboardIdentifier="TestViewController" title="NewsBot" id="ltY-cV-jj4" customClass="TestViewController" customModule="NewsFeedBot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TestViewController" title="NewsBot" id="ltY-cV-jj4" customClass="TestViewController" customModule="PoliNewsBot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gzs-Mk-4iy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +141,7 @@
         <!--NewsBot-->
         <scene sceneID="MQ6-QG-Wlm">
             <objects>
-                <viewController storyboardIdentifier="ModerateViewController" title="NewsBot" id="yJZ-4i-6PR" customClass="ModerateViewController" customModule="NewsFeedBot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ModerateViewController" title="NewsBot" id="yJZ-4i-6PR" customClass="ModerateViewController" customModule="PoliNewsBot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hfy-ep-AW4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -211,10 +228,25 @@
             </objects>
             <point key="canvasLocation" x="1819" y="778"/>
         </scene>
+        <!--Intervention View Controller-->
+        <scene sceneID="Z98-vw-YlU">
+            <objects>
+                <viewController storyboardIdentifier="InterventionViewController" id="eA5-u4-tFC" customClass="InterventionViewController" customModule="PoliNewsBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UBV-V8-dgt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="r7H-5z-j0Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ebk-h3-bpq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1819" y="1465"/>
+        </scene>
         <!--Rate View Controller-->
         <scene sceneID="pnc-Wg-mi8">
             <objects>
-                <viewController storyboardIdentifier="RateViewController" id="Yta-fN-F89" customClass="RateViewController" customModule="NewsFeedBot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RateViewController" id="Yta-fN-F89" customClass="RateViewController" customModule="PoliNewsBot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aPq-KP-tQ1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,7 +274,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUq-me-mWE" customClass="SwiftlySlider" customModule="NewsFeedBot" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUq-me-mWE" customClass="SwiftlySlider" customModule="PoliNewsBot" customModuleProvider="target">
                                 <rect key="frame" x="30" y="513.5" width="354" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261E5161264F5E4800BA4E69 /* InterventionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261E5160264F5E4800BA4E69 /* InterventionViewController.swift */; };
 		267EABDF2648473600EC1FE3 /* BottomPopupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABD72648473600EC1FE3 /* BottomPopupUtils.swift */; };
 		267EABE02648473600EC1FE3 /* BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABD82648473600EC1FE3 /* BottomPopupViewController.swift */; };
 		267EABE12648473600EC1FE3 /* BottomPopupDismissInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABD92648473600EC1FE3 /* BottomPopupDismissInteractionController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		261E5160264F5E4800BA4E69 /* InterventionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterventionViewController.swift; sourceTree = "<group>"; };
 		267EABD72648473600EC1FE3 /* BottomPopupUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupUtils.swift; sourceTree = "<group>"; };
 		267EABD82648473600EC1FE3 /* BottomPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
 		267EABD92648473600EC1FE3 /* BottomPopupDismissInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissInteractionController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				26D7ED852644406B003F3425 /* TestViewController.swift */,
 				267EABE72648483600EC1FE3 /* RateViewController.swift */,
 				267EABE926484A8500EC1FE3 /* SwiftlySlider.swift */,
+				261E5160264F5E4800BA4E69 /* InterventionViewController.swift */,
 				26D7ED7526443EB8003F3425 /* Main.storyboard */,
 				26D7ED7826443EB8003F3425 /* Assets.xcassets */,
 				26D7ED7A26443EB8003F3425 /* LaunchScreen.storyboard */,
@@ -271,6 +274,7 @@
 				267EABE32648473600EC1FE3 /* BottomPopupDismissAnimator.swift in Sources */,
 				267EABE42648473600EC1FE3 /* BottomPopupPresentAnimator.swift in Sources */,
 				267EABE82648483600EC1FE3 /* RateViewController.swift in Sources */,
+				261E5161264F5E4800BA4E69 /* InterventionViewController.swift in Sources */,
 				26D7ED8426444064003F3425 /* ModerateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
