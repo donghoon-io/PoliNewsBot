@@ -15,6 +15,22 @@ import IQKeyboardManagerSwift
 class ModerateViewController: MessagesViewController, InputBarAccessoryViewDelegate, MessagesDataSource, MessagesLayoutDelegate, MessagesDisplayDelegate, TagListViewDelegate {
     
     let themes = ["LH 혁신위원회", "더불어민주당", "도지코인", "김부겸 청문회", "윤석헌 금감원장", "택배기사 파업"]
+    let themes1 = ["일론 머스크", "애플 신제품", "윤석열", "백신", "빌게이츠 이혼", "서울대학교"]
+    @IBOutlet weak var reloadButton: UIButton! {
+        didSet {
+            reloadButton.layer.cornerRadius = 10
+            reloadButton.layer.borderColor = UIColor(hex: "#333333").cgColor
+            reloadButton.layer.borderWidth = 0.5
+        }
+    }
+    @IBAction func reloadClicked(_ sender: UIButton) {
+        for (index, item) in tagListView.tagViews.enumerated() {
+            item.setTitle(themes1[index], for: .normal)
+            item.tagBackgroundColor = .systemGray5
+            item.textColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
+        }
+        self.view.layoutIfNeeded()
+    }
     
     @IBOutlet weak var tagTopView: UIView!
     @IBOutlet weak var tagListView: TagListView!

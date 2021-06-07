@@ -18,6 +18,11 @@ class ViewController: UIViewController {
             recommendationButton.layer.cornerRadius = 10
         }
     }
+    @IBOutlet weak var moderateButton: UIButton! {
+        didSet {
+            moderateButton.layer.cornerRadius = 10
+        }
+    }
     @IBAction func testButtonClicked(_ sender: UIButton) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TestViewController") as! TestViewController
         self.navigationController?.pushViewController(vc, animated: true)

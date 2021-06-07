@@ -10,6 +10,8 @@
 		261E5161264F5E4800BA4E69 /* InterventionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261E5160264F5E4800BA4E69 /* InterventionViewController.swift */; };
 		265B20DE266EAC7000CD425A /* TopicChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B20DD266EAC7000CD425A /* TopicChooseViewController.swift */; };
 		265B20E0266EB5E200CD425A /* ChooseSimilarityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B20DF266EB5E200CD425A /* ChooseSimilarityViewController.swift */; };
+		265B20E2266EBBD800CD425A /* WarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B20E1266EBBD800CD425A /* WarningViewController.swift */; };
+		265B20E4266EC03B00CD425A /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B20E3266EC03B00CD425A /* Toast.swift */; };
 		267EABDF2648473600EC1FE3 /* BottomPopupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABD72648473600EC1FE3 /* BottomPopupUtils.swift */; };
 		267EABE02648473600EC1FE3 /* BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABD82648473600EC1FE3 /* BottomPopupViewController.swift */; };
 		267EABE12648473600EC1FE3 /* BottomPopupDismissInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABD92648473600EC1FE3 /* BottomPopupDismissInteractionController.swift */; };
@@ -37,6 +39,8 @@
 		261E5160264F5E4800BA4E69 /* InterventionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterventionViewController.swift; sourceTree = "<group>"; };
 		265B20DD266EAC7000CD425A /* TopicChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicChooseViewController.swift; sourceTree = "<group>"; };
 		265B20DF266EB5E200CD425A /* ChooseSimilarityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSimilarityViewController.swift; sourceTree = "<group>"; };
+		265B20E1266EBBD800CD425A /* WarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningViewController.swift; sourceTree = "<group>"; };
+		265B20E3266EC03B00CD425A /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		267EABD72648473600EC1FE3 /* BottomPopupUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupUtils.swift; sourceTree = "<group>"; };
 		267EABD82648473600EC1FE3 /* BottomPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
 		267EABD92648473600EC1FE3 /* BottomPopupDismissInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissInteractionController.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 			children = (
 				26D7ED6F26443EB8003F3425 /* AppDelegate.swift */,
 				26D7ED7126443EB8003F3425 /* SceneDelegate.swift */,
+				265B20E3266EC03B00CD425A /* Toast.swift */,
 				26D7ED7326443EB8003F3425 /* ViewController.swift */,
 				26D7ED8326444064003F3425 /* ModerateViewController.swift */,
 				267EABD62648473600EC1FE3 /* BottomPopupController */,
@@ -125,6 +130,7 @@
 				265B20DF266EB5E200CD425A /* ChooseSimilarityViewController.swift */,
 				261E5160264F5E4800BA4E69 /* InterventionViewController.swift */,
 				26D7ED7526443EB8003F3425 /* Main.storyboard */,
+				265B20E1266EBBD800CD425A /* WarningViewController.swift */,
 				265B20DD266EAC7000CD425A /* TopicChooseViewController.swift */,
 				26D7ED7826443EB8003F3425 /* Assets.xcassets */,
 				26D7ED7A26443EB8003F3425 /* LaunchScreen.storyboard */,
@@ -264,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265B20E2266EBBD800CD425A /* WarningViewController.swift in Sources */,
 				26D7ED862644406B003F3425 /* TestViewController.swift in Sources */,
 				267EABE52648473600EC1FE3 /* BottomPopupTransitionHandler.swift in Sources */,
 				26D7ED7426443EB8003F3425 /* ViewController.swift in Sources */,
@@ -282,6 +289,7 @@
 				267EABE32648473600EC1FE3 /* BottomPopupDismissAnimator.swift in Sources */,
 				267EABE42648473600EC1FE3 /* BottomPopupPresentAnimator.swift in Sources */,
 				267EABE82648483600EC1FE3 /* RateViewController.swift in Sources */,
+				265B20E4266EC03B00CD425A /* Toast.swift in Sources */,
 				261E5161264F5E4800BA4E69 /* InterventionViewController.swift in Sources */,
 				26D7ED8426444064003F3425 /* ModerateViewController.swift in Sources */,
 			);

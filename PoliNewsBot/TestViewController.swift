@@ -145,9 +145,9 @@ class TestViewController: MessagesViewController, InputBarAccessoryViewDelegate,
                     self.sendBotMessage(text: "먼저, 다음 이슈들 중 가장 관심 있는 이슈를 2가지 이상 선택해주세요:")
                     DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
                         
-                            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TopicChooseViewController") as! TopicChooseViewController
+                        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TopicChooseViewController") as! TopicChooseViewController
                         vc.delegate = self
-                            self.present(vc, animated: true, completion: nil)
+                        self.present(vc, animated: true, completion: nil)
                     }
                 }
             }
@@ -173,11 +173,11 @@ class TestViewController: MessagesViewController, InputBarAccessoryViewDelegate,
                 DispatchQueue.main.asyncAfter(deadline: .now()+1.5) {
                     self.sendBotMessage(text: "본인의 선호도와 어느 정도 유사한 성향의 기사를 추천받을지 선택해주세요:")
                     
-                        DispatchQueue.main.asyncAfter(deadline: .now()+1.5) {
-                            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChooseSimilarityViewController") as! ChooseSimilarityViewController
+                    DispatchQueue.main.asyncAfter(deadline: .now()+1.5) {
+                        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChooseSimilarityViewController") as! ChooseSimilarityViewController
                         vc.delegate = self
-                            self.present(vc, animated: true, completion: nil)
-                        }
+                        self.present(vc, animated: true, completion: nil)
+                    }
                 }
             default:
                 print("no")
@@ -239,15 +239,15 @@ extension UIColor {
     convenience init(hex: String, alpha: CGFloat = 1.0) {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         var rgbValue:UInt32 = 10066329 //color #999999 if string has wrong format
-
+        
         if (cString.hasPrefix("#")) {
             cString.remove(at: cString.startIndex)
         }
-
+        
         if ((cString.count) == 6) {
             Scanner(string: cString).scanHexInt32(&rgbValue)
         }
-
+        
         self.init(
             red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
             green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
