@@ -120,6 +120,93 @@
             </objects>
             <point key="canvasLocation" x="1819" y="80"/>
         </scene>
+        <!--Topic Choose View Controller-->
+        <scene sceneID="Eiq-qj-OZR">
+            <objects>
+                <viewController storyboardIdentifier="TopicChooseViewController" id="g1B-zR-fR5" customClass="TopicChooseViewController" customModule="PoliNewsBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VaU-F9-sRt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTz-bN-9Vq" customClass="TagListView" customModule="TagListView">
+                                <rect key="frame" x="30" y="114" width="354" height="88.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qTz-bN-9Vq" secondAttribute="height" multiplier="20:5" id="gHI-Eo-3ej"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                        <color key="value" systemColor="systemGrayColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagHighlightedBackgroundColor">
+                                        <color key="value" systemColor="systemGray3Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 관심 주제 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZx-x9-O15">
+                                <rect key="frame" x="30" y="69" width="354" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="uDL-5M-sb6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhT-t5-nQF">
+                                <rect key="frame" x="328" y="64" width="56" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="선택 완료"/>
+                                <connections>
+                                    <action selector="chooseButtonClicked:" destination="g1B-zR-fR5" eventType="touchUpInside" id="ROd-UP-hBc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fTQ-DR-bak"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QZx-x9-O15" firstAttribute="top" secondItem="fTQ-DR-bak" secondAttribute="top" constant="25" id="7Dy-Or-h4S"/>
+                            <constraint firstItem="QZx-x9-O15" firstAttribute="leading" secondItem="fTQ-DR-bak" secondAttribute="leading" constant="30" id="Dgk-5e-fPB"/>
+                            <constraint firstItem="fTQ-DR-bak" firstAttribute="trailing" secondItem="QZx-x9-O15" secondAttribute="trailing" constant="30" id="E80-Oe-V7q"/>
+                            <constraint firstItem="qTz-bN-9Vq" firstAttribute="trailing" secondItem="QZx-x9-O15" secondAttribute="trailing" id="O5H-dD-Dyk"/>
+                            <constraint firstItem="UhT-t5-nQF" firstAttribute="trailing" secondItem="QZx-x9-O15" secondAttribute="trailing" id="hAv-9b-HbP"/>
+                            <constraint firstItem="qTz-bN-9Vq" firstAttribute="leading" secondItem="QZx-x9-O15" secondAttribute="leading" id="jL1-gd-kZ9"/>
+                            <constraint firstItem="UhT-t5-nQF" firstAttribute="centerY" secondItem="QZx-x9-O15" secondAttribute="centerY" id="jdS-to-3vT"/>
+                            <constraint firstItem="qTz-bN-9Vq" firstAttribute="top" secondItem="QZx-x9-O15" secondAttribute="bottom" constant="25" id="pKB-p9-t9N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chooseButton" destination="UhT-t5-nQF" id="a9Y-xW-ZYE"/>
+                        <outlet property="tagListView" destination="qTz-bN-9Vq" id="tFH-J9-E6x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9zo-ce-v2E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2583" y="80"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Q7M-I1-vo1">
             <objects>
@@ -226,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s4L-FP-Dr0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1819" y="778"/>
+            <point key="canvasLocation" x="1818.840579710145" y="777.45535714285711"/>
         </scene>
         <!--PoliNewsBot-->
         <scene sceneID="Z98-vw-YlU">
@@ -341,6 +428,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHm-wn-Lpy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2611.594202898551" y="776.78571428571422"/>
+        </scene>
+        <!--Choose Similarity View Controller-->
+        <scene sceneID="jlk-pM-PCD">
+            <objects>
+                <viewController storyboardIdentifier="ChooseSimilarityViewController" id="LdI-Mj-S7K" customClass="ChooseSimilarityViewController" customModule="PoliNewsBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fIe-bl-lD4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천 기사의 성향 유사도 (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4C-oP-nqh">
+                                <rect key="frame" x="30" y="69" width="354" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="vzM-kl-xPf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdE-E5-cny">
+                                <rect key="frame" x="328" y="64" width="56" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="선택 완료"/>
+                                <connections>
+                                    <action selector="chooseButtonClicked:" destination="LdI-Mj-S7K" eventType="touchUpInside" id="21Q-KL-iFE"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpa-2t-tka" customClass="SwiftlySlider" customModule="PoliNewsBot" customModuleProvider="target">
+                                <rect key="frame" x="30" y="119" width="354" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wPN-qh-nyO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g1N-Xi-iHD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kpa-2t-tka" firstAttribute="top" secondItem="qdE-E5-cny" secondAttribute="bottom" constant="25" id="Q82-oU-6Hy"/>
+                            <constraint firstItem="kpa-2t-tka" firstAttribute="leading" secondItem="Y4C-oP-nqh" secondAttribute="leading" id="R5s-U3-dth"/>
+                            <constraint firstItem="qdE-E5-cny" firstAttribute="trailing" secondItem="Y4C-oP-nqh" secondAttribute="trailing" id="b2L-hG-fhL"/>
+                            <constraint firstItem="g1N-Xi-iHD" firstAttribute="trailing" secondItem="Y4C-oP-nqh" secondAttribute="trailing" constant="30" id="coW-J5-Txr"/>
+                            <constraint firstItem="Y4C-oP-nqh" firstAttribute="top" secondItem="g1N-Xi-iHD" secondAttribute="top" constant="25" id="cvx-35-qsS"/>
+                            <constraint firstItem="qdE-E5-cny" firstAttribute="centerY" secondItem="Y4C-oP-nqh" secondAttribute="centerY" id="qDh-4M-bzU"/>
+                            <constraint firstItem="kpa-2t-tka" firstAttribute="trailing" secondItem="Y4C-oP-nqh" secondAttribute="trailing" id="vXE-mo-EYb"/>
+                            <constraint firstItem="Y4C-oP-nqh" firstAttribute="leading" secondItem="g1N-Xi-iHD" secondAttribute="leading" constant="30" id="zxq-0A-9TH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chooseButton" destination="qdE-E5-cny" id="Abc-zK-o2N"/>
+                        <outlet property="rateView" destination="kpa-2t-tka" id="bkS-Jf-u9j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5T5-Qm-dkh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3316" y="80"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>

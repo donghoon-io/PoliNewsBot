@@ -185,7 +185,7 @@ class InterventionViewController: MessagesViewController, InputBarAccessoryViewD
         case participant1: return .systemGray5
         case participant2: return .systemGray5
         case participant3: return .systemGray5
-        default: return .darkGray
+        default: return UIColor(hex: "B6E3D8")
         }
     }
     func textColor(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UIColor {
@@ -194,7 +194,7 @@ class InterventionViewController: MessagesViewController, InputBarAccessoryViewD
         case participant1: return UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
         case participant2: return UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
         case participant3: return UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
-        default: return .white
+        default: return UIColor(red: 0.15, green: 0.15, blue: 0.15, alpha: 1.0)
         }
     }
     
@@ -205,7 +205,7 @@ class InterventionViewController: MessagesViewController, InputBarAccessoryViewD
         case participant1: avatarView.initials = "익명1"
         case participant2: avatarView.initials = "익명2"
         case participant3: avatarView.initials = "익명3"
-        default: avatarView.initials = "봇"
+        default: avatarView.image = UIImage(named: "chatbot_profile")
         }
     }
     

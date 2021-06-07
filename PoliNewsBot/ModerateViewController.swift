@@ -48,30 +48,36 @@ class ModerateViewController: MessagesViewController, InputBarAccessoryViewDeleg
         for (index, item) in themes.enumerated() {
             if [1,5].contains(index) {
                 let tag = tagListView.addTag(item)
-                tag.tagBackgroundColor = .link
+                tag.tagBackgroundColor = UIColor(hex: "B6E3D8")
+                tag.textColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1.0)
                 tag.textFont = UIFont.systemFont(ofSize: 14)
                 tag.cornerRadius = 12
                 tag.paddingY = 5
                 tag.paddingX = 10
                 tag.onTap = { tagView in
-                    if tagView.tagBackgroundColor == .link {
-                        tagView.tagBackgroundColor = .gray
+                    if tagView.tagBackgroundColor == UIColor(hex: "B6E3D8") {
+                        tag.tagBackgroundColor = .systemGray5
+                        tag.textColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
                     } else {
-                        tagView.tagBackgroundColor = .link
+                        tagView.tagBackgroundColor = UIColor(hex: "B6E3D8")
+                        tag.textColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1.0)
                     }
                 }
             } else {
                 let tag = tagListView.addTag(item)
-                tag.tagBackgroundColor = .gray
+                tag.tagBackgroundColor = .systemGray5
+                tag.textColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
                 tag.textFont = UIFont.systemFont(ofSize: 14)
                 tag.cornerRadius = 12
                 tag.paddingY = 5
                 tag.paddingX = 10
                 tag.onTap = { tagView in
-                    if tagView.tagBackgroundColor == .link {
-                        tagView.tagBackgroundColor = .gray
+                    if tagView.tagBackgroundColor == UIColor(hex: "B6E3D8") {
+                        tag.tagBackgroundColor = .systemGray5
+                        tag.textColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
                     } else {
-                        tagView.tagBackgroundColor = .link
+                        tagView.tagBackgroundColor = UIColor(hex: "B6E3D8")
+                        tag.textColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1.0)
                     }
                 }
             }
@@ -209,13 +215,13 @@ class ModerateViewController: MessagesViewController, InputBarAccessoryViewDeleg
     func backgroundColor(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UIColor {
         switch message.sender.senderId {
         case experimentID: return .systemBlue
-        default: return .systemGray5
+        default: return UIColor(hex: "B6E3D8")
         }
     }
     func textColor(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UIColor {
         switch message.sender.senderId {
         case experimentID: return .white
-        default: return UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        default: return UIColor(red: 0.15, green: 0.15, blue: 0.15, alpha: 1.0)
         }
     }
     func configureAccessoryView(_ accessoryView: UIView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
@@ -228,7 +234,7 @@ class ModerateViewController: MessagesViewController, InputBarAccessoryViewDeleg
         
         if message.messageId.contains("thisistrue") {
             let button = UIButton(type: .infoLight)
-            button.tintColor = .link
+            button.tintColor = UIColor(hex: "333333")
             accessoryView.addSubview(button)
             button.frame = accessoryView.bounds
             button.addTarget(self, action: #selector(click), for: .touchUpInside)
@@ -247,7 +253,7 @@ class ModerateViewController: MessagesViewController, InputBarAccessoryViewDeleg
         
         switch message.sender.senderId {
         case experimentID: avatarView.initials = "나"
-        default: avatarView.initials = "봇"
+        default: avatarView.image = UIImage(named: "chatbot_profile")
         }
     }
     

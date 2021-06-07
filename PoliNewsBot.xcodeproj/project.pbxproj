@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		261E5161264F5E4800BA4E69 /* InterventionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261E5160264F5E4800BA4E69 /* InterventionViewController.swift */; };
+		265B20DE266EAC7000CD425A /* TopicChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B20DD266EAC7000CD425A /* TopicChooseViewController.swift */; };
+		265B20E0266EB5E200CD425A /* ChooseSimilarityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B20DF266EB5E200CD425A /* ChooseSimilarityViewController.swift */; };
 		267EABDF2648473600EC1FE3 /* BottomPopupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABD72648473600EC1FE3 /* BottomPopupUtils.swift */; };
 		267EABE02648473600EC1FE3 /* BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABD82648473600EC1FE3 /* BottomPopupViewController.swift */; };
 		267EABE12648473600EC1FE3 /* BottomPopupDismissInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EABD92648473600EC1FE3 /* BottomPopupDismissInteractionController.swift */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		261E5160264F5E4800BA4E69 /* InterventionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterventionViewController.swift; sourceTree = "<group>"; };
+		265B20DD266EAC7000CD425A /* TopicChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicChooseViewController.swift; sourceTree = "<group>"; };
+		265B20DF266EB5E200CD425A /* ChooseSimilarityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSimilarityViewController.swift; sourceTree = "<group>"; };
 		267EABD72648473600EC1FE3 /* BottomPopupUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupUtils.swift; sourceTree = "<group>"; };
 		267EABD82648473600EC1FE3 /* BottomPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
 		267EABD92648473600EC1FE3 /* BottomPopupDismissInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissInteractionController.swift; sourceTree = "<group>"; };
@@ -118,8 +122,10 @@
 				26D7ED852644406B003F3425 /* TestViewController.swift */,
 				267EABE72648483600EC1FE3 /* RateViewController.swift */,
 				267EABE926484A8500EC1FE3 /* SwiftlySlider.swift */,
+				265B20DF266EB5E200CD425A /* ChooseSimilarityViewController.swift */,
 				261E5160264F5E4800BA4E69 /* InterventionViewController.swift */,
 				26D7ED7526443EB8003F3425 /* Main.storyboard */,
+				265B20DD266EAC7000CD425A /* TopicChooseViewController.swift */,
 				26D7ED7826443EB8003F3425 /* Assets.xcassets */,
 				26D7ED7A26443EB8003F3425 /* LaunchScreen.storyboard */,
 				26D7ED7D26443EB8003F3425 /* Info.plist */,
@@ -268,9 +274,11 @@
 				26D7ED7026443EB8003F3425 /* AppDelegate.swift in Sources */,
 				267EABE02648473600EC1FE3 /* BottomPopupViewController.swift in Sources */,
 				26D7ED8926444202003F3425 /* Message.swift in Sources */,
+				265B20E0266EB5E200CD425A /* ChooseSimilarityViewController.swift in Sources */,
 				267EABE12648473600EC1FE3 /* BottomPopupDismissInteractionController.swift in Sources */,
 				26D7ED7226443EB8003F3425 /* SceneDelegate.swift in Sources */,
 				267EABE62648473600EC1FE3 /* BottomPopupPresentationController.swift in Sources */,
+				265B20DE266EAC7000CD425A /* TopicChooseViewController.swift in Sources */,
 				267EABE32648473600EC1FE3 /* BottomPopupDismissAnimator.swift in Sources */,
 				267EABE42648473600EC1FE3 /* BottomPopupPresentAnimator.swift in Sources */,
 				267EABE82648483600EC1FE3 /* RateViewController.swift in Sources */,
