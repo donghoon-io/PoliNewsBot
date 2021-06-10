@@ -15,7 +15,14 @@ class TestViewController: MessagesViewController, InputBarAccessoryViewDelegate,
     
     var buttonIdx = 0
     
-    @objc func nextGo() {
+    @objc func nextGo(sender: UIButton) {
+        
+        sender.alpha = 0.3
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5 ) {
+            sender.alpha = 1.0
+        }
+        
         if buttonIdx == 0 {
             buttonIdx += 1
             DispatchQueue.main.asyncAfter(deadline: .now()+1.5) {
@@ -164,7 +171,7 @@ class TestViewController: MessagesViewController, InputBarAccessoryViewDelegate,
             switch message.content {
             case "없어요":
                 DispatchQueue.main.asyncAfter(deadline: .now()+1.5) {
-                    self.sendBotMessage(text: "기사 평가가 완료되었습니다! 신동훈 님의 기사 선호 유형을 분석중입니다")
+                    self.sendBotMessage(text: "기사 평가가 완료되었습니다! 김민지 님의 기사 선호 유형을 분석중입니다")
                     DispatchQueue.main.asyncAfter(deadline: .now()+1.5) {
                         self.sendBotMessage(text: "분석이 완료되었습니다! 이슈 1개당 추천받을 기사의 개수를 선택해주세요")
                     }
