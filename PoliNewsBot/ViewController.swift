@@ -11,16 +11,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var testButton: UIButton! {
         didSet {
             testButton.layer.cornerRadius = 10
+            testButton.layer.borderWidth = 1
+            testButton.layer.borderColor = UIColor.black.cgColor
         }
     }
     @IBOutlet weak var recommendationButton: UIButton! {
         didSet {
             recommendationButton.layer.cornerRadius = 10
+            recommendationButton.layer.borderWidth = 1
+            recommendationButton.layer.borderColor = UIColor.black.cgColor
         }
     }
     @IBOutlet weak var moderateButton: UIButton! {
         didSet {
             moderateButton.layer.cornerRadius = 10
+            moderateButton.layer.borderWidth = 1
+            moderateButton.layer.borderColor = UIColor.black.cgColor
         }
     }
     @IBAction func testButtonClicked(_ sender: UIButton) {
